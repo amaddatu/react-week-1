@@ -1,8 +1,9 @@
 import React from "react";
 
-const name = "Ahmed";
-const num1 = 1;
-const num2 = 2;
+const name = "Caitlin";
+const num1 = 3;
+const num2 = 4;
+const arr = [1, 2, 3, 4, 5, 6];
 
 function JSXVariables() {
   return (
@@ -21,6 +22,7 @@ function JSXVariables() {
             {Math.floor(Math.random() * 10) + 1}.
           </h2>
           <h2>I can even reverse my name: {name.split("").reverse()}</h2>
+          {arr.map(choco => {return (<h2>{choco}</h2>);} ) }
         </div>
       </div>
     </div>
