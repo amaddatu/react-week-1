@@ -9,10 +9,13 @@ import Math from "./Math";
 function Calculator() {
   return (
     <div>
-      <p>19 + 341 = <Math num1={19} num2={341} op="+" /></p>
-      <p>42 - 17 = <Math num1={42} num2={17} op="-" /></p>
-      <p>100 * 3 = <Math num1={100} num2={3} op="*" /></p>
-      <p>96 / 4 = <Math num1={96} num2={4} op="/" /></p>
+      <p><Math>19 + 341</Math></p>
+      
+      <p><Math>42 - 17</Math></p>
+      
+      <p><Math>100 * 3</Math></p>
+      
+      <p><Math>96 / 4</Math></p>
     </div>
   );
 }

@@ -2,23 +2,7 @@ import React from "react";
 
 function Math(props){
     console.log(props);
-    console.log(props.op);
-    let answer = 0;
-    switch(props.op){
-        case "+":
-            answer = props.num1 + props.num2;
-            break;
-        case "-":
-            answer = props.num1 - props.num2;
-            break;
-        case "/":
-            answer = props.num1 / props.num2;
-            break;
-        case "*":
-            answer = props.num1 * props.num2;
-            break;
-    }
-    return <span>{answer}</span>;
+    return <span>{`${props.children} = `} {eval(props.children)}</span>;
 }
 
 export default Math;
