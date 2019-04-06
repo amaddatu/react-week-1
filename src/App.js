@@ -5,7 +5,7 @@ const groceries = [
   {
     id: 1,
     name: "Milk",
-    purchased: true
+    purchased: false
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const groceries = [
   {
     id: 3,
     name: "Cheese",
-    purchased: false
+    purchased: true
   },
   {
     id: 4,

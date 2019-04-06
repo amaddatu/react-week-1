@@ -1,10 +1,12 @@
 import React from "react";
 
 function List(props) {
+  console.log(props.groceries);
   return (
     <ul className="list-group">
-      Using the map method, render one li element displaying the text property of each grocery
-      object.
+      {props.groceries.map(uhm => { 
+        return uhm.purchased ? "" : (<li className="list-group-item">{uhm.name}</li>);
+      })}
     </ul>
   );
 }
