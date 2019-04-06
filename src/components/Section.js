@@ -3,8 +3,11 @@ import "../styles/Section.css";
 
 // By importing the Section.css file, it is added to the DOM whenever this component loads
 function Section() {
+  const styleSection={
+    background: "orange"
+  };
   return (
-    <section className="section">
+    <section className="section" style={styleSection}>
       <h2>Lorem Ipsum Dolor Sit Amet</h2>
       <p>
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
