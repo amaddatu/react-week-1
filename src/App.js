@@ -39,6 +39,7 @@ class App extends Component {
           this.state.friends.map( (friend, index) => {
             return (
               <FriendCard
+                key={"friend" + index}
                 name={friend.name}
                 image={friend.image}
                 occupation={friend.occupation}
